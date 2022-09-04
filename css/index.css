@@ -268,7 +268,6 @@ a  img.imagem-pequena {
     margin: 0;
     width: 90%;
     height: 561;
-    filter: "";
 }
 
 
@@ -283,6 +282,7 @@ div#flex-container-img {
     margin: auto;
     top: 40px;
     height: 120px;
+    z-index: 5;
 }
 
 #section-promocao {
@@ -401,6 +401,27 @@ footer {
     z-index: -1;
 }
 
+#img-pqn1, #img-pqn2 {
+    filter: blur(0px);
+}
 
+#texto-img1 {
+    display: none;
+    font-Family: "Inter", sans-serif;
+    font-size: 30pt;
+    color: white;
+    position: relative;
+    left: 455px;
+    top: -215px;
+}
 
+#texto-img2 {
+    display: none;
+    font-Family: "Inter", sans-serif;
+    font-size: 30pt;
+    color: white;
+    position: relative;
+    left: 1115px;
+    top: -215px;
+}
 
