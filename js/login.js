@@ -13,18 +13,25 @@ function validarFormulario() {
         if((email !== null && email !== undefined && email !== '') 
         && (senha !== null && senha !== undefined && senha !== '')) {
             msgValidacao.style.zIndex = '2';
+            setTimeout(function(){
+                window.open('index.html','_self');
+            },1500);
         } else {
             msgInvalidacao.style.zIndex = '2';
+            setTimeout(function(){
+                msgInvalidacao.style.zIndex = '0';
+            }, 1500)
         };
     });
 
-    msgValidacao.addEventListener("mouseout",function(){
-        window.open('index.html','_self');
-    })
 
-    msgInvalidacao.addEventListener("mouseout",function(){
-        msgInvalidacao.style.zIndex = '0';
-    })
+
+
+
+
+
+
+
 
 };
 
